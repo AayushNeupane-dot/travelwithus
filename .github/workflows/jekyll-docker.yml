@@ -1,20 +1,41 @@
-name: Jekyll site CI
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+.navbar {
+    margin-bottom: 0;
+}
 
-jobs:
-  build:
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    runs-on: ubuntu-latest
+section {
+    padding: 60px 0;
+}
 
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.icon i {
+    color: #007bff;
+}
+
