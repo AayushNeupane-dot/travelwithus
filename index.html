@@ -24,6 +24,9 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#offers">Special Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Travel Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -38,8 +41,8 @@
             <a href="#services" class="btn btn-primary">Get Started</a>
         </div>
     </section>
-    
-    
+
+    <!-- Services Section -->
     <section id="services" class="py-5">
         <div class="container">
             <div class="row text-center">
@@ -61,8 +64,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+    <!-- Popular Destinations Section -->
     <section id="destinations" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-5">Popular Destinations</h2>
@@ -97,72 +100,291 @@
             </div>
         </div>
     </section>
-    
-    
-    <section id="testimonials" class="py-5">
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">What Our Clients Say</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column align-items-center">
-                            <p class="lead">"Amazing experience! The trip was perfectly organized."</p>
-                            <span>- John Doe</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <p class="lead">"Best travel agency ever! Highly recommend."</p>
-                            <span>- Jane Smith</span>
-                        </div>
+            <h2 class="text-center mb-5">Special Offers</h2>
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="offer-card">
+                        <h4>Paris for Two</h4>
+                        <p>Enjoy a romantic getaway to Paris at a 20% discount!</p>
+                        <button class="btn btn-primary">Book Now</button>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
+                <div class="col-lg-4">
+                    <div class="offer-card">
+                        <h4>Summer in Bali</h4>
+                        <p>Get up to 30% off on summer tours to Bali.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="offer-card">
+                        <h4>USA Tour Package</h4>
+                        <p>Explore the USA with our exclusive deals.</p>
+                        <button class="btn btn-primary">Check Offers</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
-    
-    <section id="contact" class="bg-dark text-light py-5">
+
+    <!-- Travel Blog Section -->
+    <section id="blog" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <form>
-                <div class="row mb-3">
-                    <div class="col-lg-6">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="col-lg-6">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            <h2 class="text-center mb-5">Travel Blog</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-card">
+                        <h4>10 Best Places to Visit in Europe</h4>
+                        <p>Explore the top destinations in Europe and make your travel plans today.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                <div class="col-lg-4">
+                    <div class="blog-card">
+                        <h4>A Guide to Solo Travel</h4>
+                        <p>Everything you need to know about traveling alone.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
-            </form>
+                <div class="col-lg-4">
+                    <div class="blog-card">
+                        <h4>How to Travel on a Budget</h4>
+                        <p>Traveling doesn’t have to be expensive. Learn tips to save on your next trip.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
-    
-    <footer class="text-center py-3 bg-dark text-light">
-        <div class="container">
+
+    <!-- FAQ Section -->
+    <!-- FAQ Section -->
+<section id="faq" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                        1. How do I book a flight?
+                    </button>
+                </h2>
+                <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can book a flight by using our "Flight Booking" section. Select your destination, travel dates, and we’ll show you the best options for your trip.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                        2. Can I cancel or change my booking?
+                    </button>
+                </h2>
+                <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, you can cancel or modify your booking by logging into your account. Cancellation policies may vary depending on the airline or service provider.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                        3. What are the payment options?
+                    </button>
+                </h2>
+                <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We accept major credit and debit cards, PayPal, and online bank transfers. You can choose the payment option that suits you best during checkout.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                        4. How do I apply for a visa?
+                    </button>
+                </h2>
+                <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Visa application depends on the destination country. You can find visa requirements on our website or contact the respective embassy for more information.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                        5. What is the best time to book a holiday package?
+                    </button>
+                </h2>
+                <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The best time to book a holiday package is typically 3-6 months in advance for popular destinations. Last-minute deals may also be available.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">
+                        6. Do I need travel insurance?
+                    </button>
+                </h2>
+                <div id="faqSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Travel insurance is highly recommended. It protects you in case of trip cancellations, medical emergencies, or lost baggage.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSeven" aria-expanded="false" aria-controls="faqSeven">
+                        7. How do I know if my booking is confirmed?
+                    </button>
+                </h2>
+                <div id="faqSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You will receive a confirmation email with your booking details after successful payment. You can also check your booking status in your account.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEight" aria-expanded="false" aria-controls="faqEight">
+                        8. Can I book activities and tours in advance?
+                    </button>
+                </h2>
+                <div id="faqEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we recommend booking activities and tours in advance to secure your spot, especially during peak travel seasons.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqNine" aria-expanded="false" aria-controls="faqNine">
+                        9. Are there any hidden fees when booking through your site?
+                    </button>
+                </h2>
+                <div id="faqNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No, there are no hidden fees. All taxes and fees are included in the final price you see before confirming your booking.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTen" aria-expanded="false" aria-controls="faqTen">
+                        10. What if my flight is delayed or canceled?
+                    </button>
+                </h2>
+                <div id="faqTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        In case of flight delays or cancellations, you will be notified by the airline. We also assist in rebooking or refund processes as per airline policies.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEleven" aria-expanded="false" aria-controls="faqEleven">
+                        11. Can I request a refund if I cancel my trip?
+                    </button>
+                </h2>
+                <div id="faqEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Refund eligibility depends on the provider's cancellation policy. We suggest checking the terms before booking.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 12 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwelve" aria-expanded="false" aria-controls="faqTwelve">
+                        12. Can I book a flight for someone else?
+                    </button>
+                </h2>
+                <div id="faqTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, you can book flights for someone else. Just enter the traveler’s details during the booking process.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 13 -->
+            <div class="accordion-item">
+               
+<!-- Footer Section -->
+<footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5>About TravelWithUs</h5>
+                <p>TravelWithUs is a leading travel agency dedicated to helping you explore the world with ease. From exclusive deals to expert advice, we are your go-to travel partner for unforgettable experiences.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-light">Home</a></li>
+                    <li><a href="#services" class="text-light">Services</a></li>
+                    <li><a href="#destinations" class="text-light">Destinations</a></li>
+                    <li><a href="#testimonials" class="text-light">Testimonials</a></li>
+                    <li><a href="#contact" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Travel St, New York, USA</li>
+                    <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@travelwithus.com</li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled d-flex">
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" class="text-light"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4">
             <p>&copy; 2024 TravelWithUs. All Rights Reserved.</p>
         </div>
-    </footer>
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-</body>
-</html>
+    </div>
+</footer>
